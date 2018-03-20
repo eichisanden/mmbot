@@ -1,7 +1,13 @@
 extends layout
 
 block content
+  div.left.row
+    a.link(href="/new") New
+    span.link  > Message
   form(method="post", action="/new/message")
-    input(type="text", name="name")
-    input(type="text", name="command")
-    input(type="submit", value="Save")
+    div.center.row
+      input.txt(type="text", name="name")
+    div.center.row
+      input.txt(type="text", name="command")
+    div.center.row
+      input.btn(type="submit", value="Save")
