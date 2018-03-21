@@ -9,6 +9,6 @@ export MATTERMOST_HUBOT_USERNAME="mmbot" # optional: if you want to override hub
 export MATTERMOST_SELFSIGNED_CERT=true # optional: if you want to ignore self signed certificate
 export HUBOT_LOG_LEVEL=debug
 
-node_modules/forever/bin/forever start ./bin/www
-node_modules/forever/bin/forever start -c coffee ./node_modules/hubot/bin/hubot -a mattermost -n mmbot
+#node_modules/forever/bin/forever start ./bin/www
+./bin/hubot -a mattermost -n mmbot
 
